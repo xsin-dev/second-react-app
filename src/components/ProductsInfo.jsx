@@ -13,6 +13,8 @@ const ProductsInfo = () => {
             <p className="products__text">{product.text}</p>
             <p className="products__price">From ${product.price}</p>
             <p className="products__description">{product.description}</p>
+            <p className="products__feature">{product.feature}</p>
+
             <a href="#" className="products__link">Shop now</a>
           </div>
 

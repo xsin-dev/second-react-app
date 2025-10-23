@@ -47,6 +47,7 @@
   flex-direction: column;
   gap: 30px;
   width: 100%;
+  margin-top: 100px;
 
   &__box {
     display: flex;
@@ -62,10 +63,9 @@
         text-align: left;
         align-items: flex-start;
       }
-      .products__description{
+      .products__description {
         text-align: left;
       }
-
     }
   }
 
@@ -103,7 +103,14 @@
     font-family: Cardo;
     letter-spacing: 0%;
     text-align: right;
-    @include headingFonts(#000000, 18px, 400, 30px, none);
+    @include headingFonts(#54595f, 18px, 400, 30px, none);
+  }
+
+  &__feature {
+    font-family: Cardo;
+    letter-spacing: 0%;
+    margin-top: 25px;
+    @include headingFonts(#54595f, 16px, 400, 27px, none);
   }
 
   &__link {
@@ -128,5 +135,210 @@
     height: 100%;
     border-radius: 12px;
     object-fit: cover;
+  }
+}
+
+// PIECES
+.pieces {
+  &__wrapper {
+    padding: 50px 160px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__title {
+    font-family: Cardo;
+    letter-spacing: 0%;
+    text-align: center;
+    @include headingFonts(#3a3a3a, 30px, 700, 39px, none);
+  }
+  &__text {
+    font-family: Cardo;
+    letter-spacing: 0%;
+    text-align: center;
+    @include headingFonts(#000000, 18px, 400, 34px, none);
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__item {
+    position: relative;
+  }
+  &__instagram {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    &-img {
+      width: 14px;
+      height: 14px;
+    }
+
+    &-text {
+      font-family: Cardo;
+      letter-spacing: 0%;
+      text-align: right;
+      @include headingFonts(#ffffff, 14px, 400, 28px, none);
+    }
+  }
+
+  &__dots {
+    height: 10px;
+    width: 233px;
+  }
+}
+
+// TESTIMONIALS
+.testimonials {
+  &__wrapper {
+    padding: 90px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  &__text {
+    font-family: Cardo;
+    font-style: Italic;
+    letter-spacing: 0%;
+    text-align: center;
+    @include headingFonts(#020202, 20px, 400, 30px, none);
+  }
+  &__user {
+    font-family: Cardo;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 10px;
+    @include headingFonts(#000000, 15px, 400, 21px, none);
+  }
+
+  &__dots {
+    height: 6px;
+    width: 200px;
+    margin-top: 20px;
+  }
+}
+
+// SPECIFICATION
+.specification {
+  &__wrapper {
+    width: 100%;
+    padding: 100px 0;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    padding: 50px 40px;
+    flex: 1;
+
+    &.bg-grey {
+      background-color: #f7f7f7;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    &-title {
+      font-family: Cardo;
+      letter-spacing: 0%;
+      text-align: center;
+      @include headingFonts(#000000, 24px, 400, 35px, uppercase);
+    }
+    &-text {
+      font-family: Cardo;
+      letter-spacing: 0%;
+      text-align: center;
+      @include headingFonts(#000000, 15px, 400, 28px, none);
+    }
+
+    &-link {
+      font-family: Cardo;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 15px;
+      line-height: 15px;
+      letter-spacing: 0%;
+      text-align: center;
+      text-decoration: underline;
+      text-decoration-style: solid;
+      text-decoration-offset: 0%;
+      text-decoration-thickness: 0%;
+      color: #000000;
+      text-transform: capitalize;
+    }
+
+    &-img {
+      width: 95px;
+      height: 95px;
+    }
+  }
+}
+
+// PARTNERS
+.partners {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 0;
+  }
+  &__title {
+    font-family: Cardo;
+    letter-spacing: 0.3px;
+    text-align: center;
+    @include headingFonts(#454545, 20px, 400, 26px, none);
+  }
+
+  &__images {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// DETAILS
+.details {
+  &__wrapper {
+    padding: 50px 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+    &-img {
+      width: 60px;
+      height: 30px;
+    }
+    &-text {
+      font-family: Roboto;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 13px;
+      line-height: 23.8px;
+      letter-spacing: 0.2px;
+    }
   }
 }
