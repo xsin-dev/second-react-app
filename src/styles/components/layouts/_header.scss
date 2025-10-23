@@ -1,0 +1,12 @@
+@use "../../base/mixins" as *;
+@use "../../base/variables" as *;
+
+.header{
+  padding: 17px 0;
+  border-bottom: 1px solid rgb(220, 219, 219);
+    &__wrapper{
+      position: relative;
+      width: 100%;
+      @include flexLayout(flex, flex-start, center, 0 , row nowrap)
+    }
+}
